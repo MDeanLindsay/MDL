@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Modern Business - Start Bootstrap Template
+        title Projects
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -35,22 +35,24 @@ html(lang='en')
                             // Project Card 1
                             .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
                                 .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h3.fw-bolder Should I Use A Word Cloud?
-                                            p
-                                            div A shareable reference if someone asks if they should use a wordcloud. (No.)
-                                        a(href='https://shouldiuseawordcloud.com')
-                                            img(src='assets/wordcloud.png', style='width:300px; height:280px;', alt='...')
+                                    a(href='https://shouldiuseawordcloud.com', style='text-decoration: none; color: black;')
+                                        .d-flex.align-items-stretch
+                                            .text-container(style='flex: 2;' class='p-5')
+                                                h3.fw-bolder Should I Use A Word Cloud?
+                                                div A gentle reminder for anyone that asks.
+                                            .image-container(style='flex: 1; max-height: 100%;')
+                                                img(src='assets/wordcloud.png', style='height: 100%; width: 100%; object-fit: cover;', alt='...')
 
                             // Project Card 2
                             .card.overflow-hidden.shadow.rounded-4.border-0
                                 .card-body.p-0
-                                    .d-flex.align-items-center
-                                        .p-5
-                                            h2.fw-bolder Project Name 2
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!
-                                        img.img-fluid(src='https://dummyimage.com/300x400/343a40/6c757d', alt='...')
+                                    a(href='https://github.com/MDeanLindsay/Cinemorgue', style='text-decoration: none; color: black;')
+                                        .d-flex.align-items-stretch
+                                            .text-container(style='flex: 2;' class='p-5')
+                                                h3.fw-bolder Cinemorgue
+                                                div An answer to an atypical question: Which actor/actress is the all time leader in film deaths?
+                                            .image-container(style='flex: 1; padding: 0 0 0 0;')
+                                                img(src='assets/Sudden-Death.jpg', style='height: 100%; width: 100%; object-fit: cover;', alt='...')
 
             // Call to action section
             section.py-5.bg-gradient-primary-to-secondary.text-white
