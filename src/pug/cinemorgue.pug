@@ -29,19 +29,23 @@ html(lang='en')
                         h1.display-5.fw-bolder.mb-0
                             span.text-gradient.d-inline Cinemorgue
                     .row.gx-5.justify-content-center
-                        .text-center
-                            .d-flex.justify-content-center.fs-2.gap-3.mb-2
-                                a.text-gradient(href="https://app.powerbi.com/view?r=eyJrIjoiM2JhNjMyNmEtNjU2ZS00NjE4LWIyNmItMzg4ZDU0N2RiOTA5IiwidCI6ImNiMWM4Y2EwLWRkMjUtNDNjOC1iMzhiLTViYTYxODFhMzhhOCIsImMiOjZ9") 
-                                    i.bi.bi-microsoft
-                                a.text-gradient(href="https://github.com/MDeanLindsay/Cinemorgue") 
-                                    i.bi.bi-github
-                                a.text-gradient(href="https://www.kaggle.com/datasets/michaellindsay/cinemorgue") 
-                                    h1 k
-                            .d-flex-row.justify-content-center.mb-2
-                                
                         .col-lg-11.col-xl-9.col-xxl-8
+                            .text-start
+                                p 
+                                    | As you will read below, this project came to be because I was annoyed that I couldn't find any reliable sources to a fairly innocuous question: Who has died the most in film?
+                                p
+                                    | This lead to dipping my toes in parsing wikimedia exports, which as anyone who has cleaned years of manual entry data has learned, is a bit of a nightmare. 
+                                    | At the moment, the dataset is just three columns: Name, Movie, Year Released. I aim to use NLP libraries to append a cause of death, and then join in other categorical imdb data in the near future to create an uncessarily comprehensive dashboard.
+                                    | If something is worth doing it's worth doing well, right?
+                                p
+                                    | Links: 
+                                    a(href="https://app.powerbi.com/view?r=eyJrIjoiM2JhNjMyNmEtNjU2ZS00NjE4LWIyNmItMzg4ZDU0N2RiOTA5IiwidCI6ImNiMWM4Y2EwLWRkMjUtNDNjOC1iMzhiLTViYTYxODFhMzhhOCIsImMiOjZ9", style="color:inherit") Power BI
+                                    | ,
+                                    a(href="https://github.com/MDeanLindsay/Cinemorgue", style="color:inherit") Github Notebook
+                                    | ,
+                                    a(href="https://www.kaggle.com/datasets/michaellindsay/cinemorgue", style="color:inherit") Kaggle Dataset
+                                    | .
                         <iframe title="Cinemorgue" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiM2JhNjMyNmEtNjU2ZS00NjE4LWIyNmItMzg4ZDU0N2RiOTA5IiwidCI6ImNiMWM4Y2EwLWRkMjUtNDNjOC1iMzhiLTViYTYxODFhMzhhOCIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
         // Footer
         include includes/footer.pug
 
