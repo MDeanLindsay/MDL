@@ -1,7 +1,6 @@
 {
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/projects/page": "app/projects/page.js",
+  "/about/page": "app/about/page.js",
   "/articles/page": "app/articles/page.js",
-  "/uses/page": "app/uses/page.js"
+  "/articles/omnidux/page": "app/articles/omnidux/page.js"
 }
