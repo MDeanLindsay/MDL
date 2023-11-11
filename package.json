@@ -1,54 +1,38 @@
 {
-    "title": "Personal",
-    "name": "startbootstrap-personal",
-    "version": "1.0.1",
-    "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
-    "description": "A personal website template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/personal",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-personal/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-personal.git"
-    },
-    "dependencies": {
-        "bootstrap": "5.2.3",
-        "startbootstrap-personal": "^1.0.1"
-    },
-    "devDependencies": {
-        "autoprefixer": "10.4.14",
-        "browser-sync": "2.29.1",
-        "chokidar": "3.5.3",
-        "concurrently": "6.3.0",
-        "postcss": "8.4.21",
-        "prettier": "2.8.6",
-        "pug": "3.0.2",
-        "sass": "1.60.0",
-        "shelljs": "0.8.5",
-        "upath": "2.0.1"
-    }
+  "name": "tailwindui-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": "defaults, not ie <= 11",
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@mapbox/rehype-prism": "^0.8.0",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "13.4.16",
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.12",
+    "cheerio": "^1.0.0-rc.12",
+    "clsx": "^1.2.1",
+    "fast-glob": "^3.2.11",
+    "feed": "^4.2.2",
+    "next": "13.4.16",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark-gfm": "^3.0.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.16",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.2",
+    "sharp": "^0.32.0"
+  }
 }

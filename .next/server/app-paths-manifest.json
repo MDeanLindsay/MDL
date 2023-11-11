@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/articles/page": "app/articles/page.js",
+  "/uses/page": "app/uses/page.js",
+  "/articles/crafting-a-design-system-for-a-multiplanetary-future/page": "app/articles/crafting-a-design-system-for-a-multiplanetary-future/page.js"
+}
