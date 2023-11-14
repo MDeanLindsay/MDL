@@ -52,7 +52,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Things I’ve made trying to put my dent in the universe."
-      intro="I intend to use this space to post any fun side projects I'm working on. Serious projects have a time and place, and those can be found on my resume. While my definition of fun is subjective, it will most likely be a collection of strange datasets I've scraped or a portfolio of dashboards I've created because I wanted to doodle in Illustrator."
+      intro="I intend to use this space to post any fun side projects I'm working on. Serious projects have a time and place, and those can be found on my resume. While my definition of fun is subjective, it will most likely be a collection of strange datasets I've scraped or a portfolio of dashboards I've created because I wanted to doodle in Illustrator. I've found that Kaggle, Reddit, etc. is where passion goes to die in a Jupyter notebook, so I'm trying to carve out my own little space to share what I enjoy doing most."
     >
       <ul
         role="list"

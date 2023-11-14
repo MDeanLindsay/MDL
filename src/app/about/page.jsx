@@ -71,20 +71,18 @@ export default function About() {
               I've mostly positioned myself in business intelligence and data engineering.
             </p>
             <p>
-              My passion for analytics has mostly stemmed from reading 538 articles 
+              My passion for analytics has mostly stemmed from reading 
+              <a href="https://fivethirtyeight.com/features/best-charts-2022/" target="_blank"> 538 articles </a>
               during my time in university. I've always admired the way they do a 
               majority of their storytelling through responsive visualizations instead 
               of treating them as afterthoughts between boring walls of text. While I’m 
               nowhere near their level of technical artistry, I hope to be one day soon.
             </p>
             <p>
-              In the meantime, I intend to use this space to post any fun side projects 
-              I'm working on. Serious projects have a time and place, and those can be 
-              found on my resume. While my definition of fun is subjective, it will most 
-              likely be a collection of strange datasets I've scraped or a portfolio of 
-              dashboards that are (hopefully) visually interesting. I've found that Kaggle, 
-              Reddit, etc. is where passion goes to die in a Jupyter notebook, so I'm 
-              trying to carve out my own little space to share what I enjoy doing most.
+              In the meantime, I dabble in a few things outside of work to convince creatives that I'm not a robot.
+              I had a brief stint in 
+              <a href="https://www.flickr.com/photos/mdeanphoto/albums/72157633589423632" target="_blank"> photography, </a>
+              skateboard on the weekends (Oregon weather permitting), and have recently become obsessed with learning to play the drums.
             </p>
           </div>
         </div>
