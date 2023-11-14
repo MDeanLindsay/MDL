@@ -1,3 +1,4 @@
 {
+  "/page": "app/page.js",
   "/articles/omnidux/page": "app/articles/omnidux/page.js"
 }

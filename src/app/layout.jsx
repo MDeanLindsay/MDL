@@ -10,7 +10,7 @@ export const metadata = {
       'Michael D. Lindsay - Data Viz, Data Science, Bad Illustrator',
   },
   description:
-    'I’m Michael, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Michael, a data analyst and MSDS student based in Portland, OR specializing in business intelligence and data engineering solutions. Currently focused on consumer analytics in the e-commerce space.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
