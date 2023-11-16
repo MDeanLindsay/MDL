@@ -1,7 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/about/page": "app/about/page.js",
-  "/articles/page": "app/articles/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/articles/omnidux/page": "app/articles/omnidux/page.js"
+  "/page": "app/page.js"
 }
