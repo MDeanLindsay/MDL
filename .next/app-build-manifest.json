@@ -5,20 +5,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/articles/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/articles/omnidux/page": [
+    "/projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/omnidux/page.js"
+      "static/chunks/app/projects/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -26,10 +21,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/projects/page": [
+    "/articles/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/projects/page.js"
+      "static/chunks/app/articles/page.js"
+    ],
+    "/articles/omnidux/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/omnidux/page.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
     ]
   }
 }
