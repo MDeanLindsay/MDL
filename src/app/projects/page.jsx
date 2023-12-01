@@ -45,13 +45,13 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Things I’ve made.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I've Made For Fun"
+      title="Things I've Made"
       intro="I've found that Kaggle, Reddit, etc. is where passion goes to die in a Jupyter notebook, so I'm trying to carve out my own little space to share what I enjoy doing most. Serious projects have a time and place, and those can be found on my resume. While my definition of fun is subjective, it will most likely be a collection of strange datasets I've scraped or a portfolio of dashboards I've created."
     >
       <ul
