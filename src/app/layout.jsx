@@ -10,7 +10,7 @@ export const metadata = {
       'Michael D. Lindsay - Data Viz, Data Science, Bad Illustrator',
   },
   description:
-    'I’m Michael, a data analyst and MSDS student based in Portland, OR specializing in business intelligence and data engineering solutions. Currently focused on consumer analytics in the e-commerce space.',
+    'I’m Michael, a data analyst and MSDS student based in Portland, OR specializing in business intelligence and data engineering solutions.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
