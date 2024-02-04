@@ -5,8 +5,6 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoCinemorgue from '@/images/logos/cinemorgue.jpeg'
 import logoKia from '@/images/logos/kia.png'
 import logoClouds from '@/images/logos/clouds.jpg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
