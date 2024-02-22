@@ -50,7 +50,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Things I made."
-      intro="I've found that Kaggle, Reddit, etc. is where passion goes to die in a Jupyter notebook, so I'm trying to carve out my own little space to share what I enjoy doing most. Serious projects have a time and place, and those can be found on my resume."
+      intro="I've found that Kaggle, Reddit, etc. is where passion goes to die in a Jupyter notebook, so I'm trying to carve out my own little space to share what I enjoy doing."
     >
       <ul
         role="list"

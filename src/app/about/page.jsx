@@ -67,8 +67,9 @@ export default function About() {
             <p>
               This can mean a lot of things to many people: SQL query monkey, 
               A/B tester of button colors, or the first person to be fired when 
-              revenue dips slightly. While I think I'm much more of a generalist, 
-              I've mostly positioned myself in business intelligence and data engineering.
+              revenue dips slightly. While I think I'm much more of a generalist after 
+              working at a small company for a few years, I've mostly positioned myself 
+              in business intelligence and data engineering.
             </p>
             <p>
               My passion for analytics has mostly stemmed from reading 
