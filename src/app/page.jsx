@@ -7,11 +7,10 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
   EmailIcon,
 } from '@/components/SocialIcons'
+
 import logoCorvel from '@/images/logos/corvel.png'
 import logoCrafts from '@/images/logos/crafts.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
@@ -279,8 +278,8 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
             <Newsletter />
+            <Resume />
           </div>
         </div>
       </Container>
