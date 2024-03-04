@@ -1,4 +1,3 @@
-"use client";
 import mailchimp from '@mailchimp/mailchimp_marketing';
 
 mailchimp.setConfig({
