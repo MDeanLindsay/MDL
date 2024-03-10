@@ -1,25 +1,54 @@
-import mailchimp from '@mailchimp/mailchimp_marketing';
+// app/api/subscribe/route.ts
+import type { NextRequest } from 'next/server';
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
-});
-
-export default async (req, res) => {
-  const { email } = req.body;
-
-  if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
-  }
-
-  try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
-      email_address: email,
-      status: 'subscribed',
-    });
-
-    return res.status(201).json({ error: '' });
-  } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
-  }
+export const config = {
+  runtime: 'experimental-edge',
 };
+
+export async function POST(req: NextRequest) {
+  const { email } = await req.json();
+  
+  if (!email) {
+    return new Response(JSON.stringify({ error: 'Email is required' }), {
+      status: 400,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }
+
+  const apiKey = process.env.MAILCHIMP_API_KEY;
+  const serverPrefix = process.env.MAILCHIMP_SERVER_PREFIX; // e.g., us1, us2, etc.
+  const listId = process.env.MAILCHIMP_LIST_ID;
+  const url = `https://${serverPrefix}.api.mailchimp.com/3.0/lists/${listId}/members`;
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${Buffer.from(`any:${apiKey}`).toString('base64')}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email_address: email,
+      status: 'subscribed', // Or 'pending' if you want to use double opt-in
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.text();
+    console.error('Failed to subscribe to Mailchimp:', error);
+    return new Response(JSON.stringify({ error: 'Failed to subscribe' }), {
+      status: response.status,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }
+
+  return new Response(JSON.stringify({ status: 'subscribed' }), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+}
