@@ -132,6 +132,7 @@ function Newsletter() {
   )
 }
 
+
 function Role({ role }) {
   let startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
