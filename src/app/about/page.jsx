@@ -82,7 +82,7 @@ export default function About() {
             <p>
               In the meantime, I dabble in a few things outside of work to convince creatives that I'm not a robot.
               I had a brief stint in 
-              <a href="https://www.flickr.com/photos/mdeanphoto/albums/72157633589423632" target="_blank"> photography, </a>
+              <a href="https://www.flickr.com/photos/mdeanphoto/albums/72157633589423632" target="_blank"> <u>photography</u>, </a>
               skateboard on the weekends (Oregon weather permitting), and have recently become obsessed with learning to play the drums.
               If I am for some reason not doing anything listed above, I am more than likely building out a ridiculous pet project, some
               of which you can see in the projects tab.
