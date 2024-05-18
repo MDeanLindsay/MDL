@@ -13,6 +13,7 @@ import {
 
 import logoCorvel from '@/images/logos/corvel.png'
 import logoCrafts from '@/images/logos/crafts.jpeg'
+import logoNewSeasons from '@/images/logos/new_seasons.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/me.png'
@@ -173,14 +174,21 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Crafts Group',
-      title: 'Data Analyst',
-      logo: logoCrafts,
-      start: '2021',
+      company: 'New Seasons',
+      title: 'Loyalty and Insights Analyst',
+      logo: logoNewSeasons,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
+    },
+    {
+      company: 'Crafts Group',
+      title: 'Data Analyst',
+      logo: logoCrafts,
+      start: '2021',
+      end: '2024',
     },
     {
       company: 'CorVel Corporation',
@@ -188,7 +196,7 @@ function Resume() {
       logo: logoCorvel,
       start: '2019',
       end: '2020',
-    },
+    }
   ]
 
   return (
