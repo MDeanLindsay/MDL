@@ -1,0 +1,55 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+
+export const article = {
+  author: 'Michael Lindsay',
+  date: '2024-07-26',
+  title: 'I Want Simple, Not Just Easy',
+  description:
+    'Simple, Not Just Easy: A Data Pipeline Perspective',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+In the world of engineering, the adage "simple, not just easy" often surfaces. 
+This concept, while seemingly paradoxical, is comically important when designing and maintaining data pipelines. 
+The distinction between simplicity and ease is crucial for ensuring the robustness and efficiency of these systems.
+
+## The Illusion of Ease
+
+It's tempting to equate ease with simplicity, particularly in the context of data pipelines. 
+An "easy" solution might involve using a plethora of pre-built tools and libraries, creating a system that works quickly and with minimal initial effort. 
+However, these "easy" solutions can quickly become tangled webs of dependencies, brittle integrations, and opaque processes that are difficult to troubleshoot or extend.
+
+For instance, using a variety of third-party tools to ingest, transform, and load data might seem like an easy approach. 
+Yet, each tool introduces its own set of configurations, failure points, and learning curves. 
+When something goes wrong, pinpointing the issue can become a herculean task. This complexity is the antithesis of simplicity.
+
+## Embrace Simplicity
+
+Simplicity in data pipelines is about making deliberate choices that favor clarity, maintainability, and reliability over quick wins. 
+A simple data pipeline is not necessarily one that is easy to build, but one that is easy to understand, test, and debug.
+
+Simplicity starts with clear design. 
+A well-designed data pipeline has a clear flow of data from source to destination, with well-defined stages and minimal branching. 
+Each stage should have a single responsibility, making it easier to reason about and test.
+
+## Just Document Things
+Documentation plays a critical role in maintaining simplicity. 
+Comprehensive documentation that explains the purpose of each component, the format of data at each stage, and common failure modes helps new team members get up to speed quickly and ensures consistency in development and troubleshooting.
+
+## Stop With The Dependencies!!
+Aiming for minimal dependencies is another key aspect. 
+Every external tool or library adds a layer of complexity and potential points of failure. 
+When building a data pipeline, it's often better to use fewer, more robust tools than a patchwork of specialized solutions. 
+For example, leveraging a single, powerful ETL framework can often be more sustainable than combining multiple niche tools.
+
+## Conclusion
+In the realm of data pipelines, simplicity should be the guiding principle. 
+While easy solutions might offer quick initial wins, they often lead to complex, fragile systems. 
+By prioritizing clear design, minimal dependencies, robust error handling, and scalability, data engineers can build pipelines that are not just easy to create but are truly simple to maintain and evolve.
